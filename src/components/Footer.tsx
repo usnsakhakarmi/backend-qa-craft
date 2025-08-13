@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Linkedin, Mail, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -17,9 +17,6 @@ const Footer = () => {
 
           <div className="flex justify-center gap-4 mb-8">
             <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
               <Linkedin className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
@@ -28,10 +25,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t pt-8">
-            <p className="text-muted-foreground flex items-center justify-center gap-2">
-              Made with <Heart className="h-4 w-4 text-red-500" /> using React & TypeScript
-            </p>
-            <p className="text-sm text-muted-foreground mt-2">
+            <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} All rights reserved.
             </p>
           </div>

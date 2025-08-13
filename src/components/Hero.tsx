@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -44,9 +44,6 @@ const Hero = () => {
               </div>
 
               <div className="flex justify-center lg:justify-start gap-6">
-                <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
-                  <Github className="h-6 w-6" />
-                </Button>
                 <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
                   <Linkedin className="h-6 w-6" />
                 </Button>
