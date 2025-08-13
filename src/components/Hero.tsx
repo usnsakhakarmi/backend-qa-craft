@@ -12,46 +12,63 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-              <span className="text-gradient">Backend Developer</span>
-              <br />
-              <span className="text-foreground">& QA Engineer</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Crafting robust server-side solutions and ensuring software quality through comprehensive testing strategies
-            </p>
-          </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                <span className="text-gradient">Backend Developer</span>
+                <br />
+                <span className="text-foreground">& QA Engineer</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                Crafting robust server-side solutions and ensuring software quality through comprehensive testing strategies
+              </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground"
-              onClick={() => scrollToSection('projects')}
-            >
-              View Projects
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8 py-6 border-primary/20 hover:bg-primary/5"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get In Touch
-            </Button>
-          </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 mt-8">
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground"
+                  onClick={() => scrollToSection('projects')}
+                >
+                  View Projects
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="text-lg px-8 py-6 border-primary/20 hover:bg-primary/5"
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Get In Touch
+                </Button>
+              </div>
 
-          <div className="flex justify-center gap-6">
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
-              <Github className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
-              <Linkedin className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
-              <Mail className="h-6 w-6" />
-            </Button>
+              <div className="flex justify-center lg:justify-start gap-6">
+                <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+                  <Github className="h-6 w-6" />
+                </Button>
+                <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+                  <Linkedin className="h-6 w-6" />
+                </Button>
+                <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+                  <Mail className="h-6 w-6" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Right side - Profile photo */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+                  <img 
+                    src="/api/placeholder/400/400" 
+                    alt="Profile photo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
