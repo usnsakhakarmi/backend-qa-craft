@@ -5,6 +5,30 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "ecommerce-api",
+      title: "E-Commerce API Platform",
+      description: "Scalable REST API supporting 10K+ concurrent users with microservices architecture, Redis caching, and comprehensive test coverage.",
+      tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Jest"],
+      type: "Backend Development",
+      image: "/api/placeholder/400/250"
+    },
+    {
+      id: "testing-framework",
+      title: "Automated Testing Framework",
+      description: "Custom testing framework with parallel execution, cross-browser support, and detailed reporting for web applications.",
+      tech: ["Selenium", "Python", "Pytest", "Docker", "CI/CD", "Allure"],
+      type: "QA Automation",
+      image: "/api/placeholder/400/250"
+    },
+    {
+      id: "api-testing-suite",
+      title: "API Testing Suite",
+      description: "Comprehensive API testing solution with automated contract testing, performance testing, and security validation.",
+      tech: ["Postman", "Newman", "JMeter", "Python", "FastAPI", "MongoDB"],
+      type: "QA & Testing",
+      image: "/api/placeholder/400/250"
+    },
+    {
       id: "ueba-system",
       title: "UEBA (User and Entity Behavior Analytics)",
       description: "Advanced behavioral analytics platform for detecting security threats through machine learning and real-time user activity monitoring.",
@@ -17,7 +41,7 @@ const Projects = () => {
       title: "CE (Correlation Engine)",
       description: "High-performance correlation engine for processing and analyzing large-scale security events and incident detection.",
       tech: ["Java", "Apache Storm", "Redis", "PostgreSQL", "RabbitMQ", "Kubernetes"],
-      type: "Backend Development",
+      type: "Event Processing",
       image: "/api/placeholder/400/250"
     },
     {
@@ -58,10 +82,13 @@ const Projects = () => {
               >
                 <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   <div className="text-6xl font-mono text-primary/30">
-                    {project.type === "Security Analytics" ? "👁️" : 
-                     project.type === "Backend Development" ? "{}" :
+                    {project.type === "Backend Development" ? "{}" : 
+                     project.type === "QA Automation" ? "⚡" :
+                     project.type === "QA & Testing" ? "🔧" :
+                     project.type === "Security Analytics" ? "👁️" : 
+                     project.type === "Event Processing" ? "🔄" :
                      project.type === "DevOps & Monitoring" ? "📊" : 
-                     project.type === "DevOps & Infrastructure" ? "⚙️" : "🔧"}
+                     project.type === "DevOps & Infrastructure" ? "⚙️" : "💻"}
                   </div>
                 </div>
                 <div className="p-6">

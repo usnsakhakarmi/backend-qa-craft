@@ -8,6 +8,72 @@ const ProjectDetail = () => {
 
   const projects = [
     {
+      id: 'ecommerce-api',
+      title: "E-Commerce API Platform",
+      description: "Scalable REST API supporting 10K+ concurrent users with microservices architecture, Redis caching, and comprehensive test coverage.",
+      fullDescription: "A comprehensive e-commerce API platform built with modern microservices architecture. The system handles high-traffic scenarios with over 10,000 concurrent users through efficient load balancing and Redis caching strategies. The platform includes user authentication, product catalog management, order processing, payment integration, and real-time inventory tracking. Built with Node.js and Express, the API follows RESTful principles and includes comprehensive test coverage using Jest. The system is containerized with Docker for easy deployment and scaling.",
+      tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Jest"],
+      type: "Backend Development",
+      challenges: [
+        "Handling high concurrent user loads",
+        "Implementing efficient caching strategies",
+        "Ensuring data consistency across microservices",
+        "Building comprehensive test coverage"
+      ],
+      features: [
+        "User authentication and authorization",
+        "Product catalog management",
+        "Order processing system",
+        "Payment gateway integration",
+        "Real-time inventory tracking",
+        "Analytics and reporting"
+      ]
+    },
+    {
+      id: 'testing-framework',
+      title: "Automated Testing Framework",
+      description: "Custom testing framework with parallel execution, cross-browser support, and detailed reporting for web applications.",
+      fullDescription: "A robust automated testing framework designed for modern web applications. The framework supports parallel test execution across multiple browsers and environments, significantly reducing testing time. Built with Selenium WebDriver and Python, it provides detailed reporting with Allure integration and supports continuous integration workflows. The framework includes page object model implementation, data-driven testing capabilities, and automatic screenshot capture on failures.",
+      tech: ["Selenium", "Python", "Pytest", "Docker", "CI/CD", "Allure"],
+      type: "QA Automation",
+      challenges: [
+        "Implementing stable cross-browser testing",
+        "Managing test data and environments",
+        "Creating maintainable test architecture",
+        "Integrating with CI/CD pipelines"
+      ],
+      features: [
+        "Cross-browser testing support",
+        "Parallel test execution",
+        "Page Object Model architecture",
+        "Data-driven testing",
+        "Detailed reporting with screenshots",
+        "CI/CD integration"
+      ]
+    },
+    {
+      id: 'api-testing-suite',
+      title: "API Testing Suite",
+      description: "Comprehensive API testing solution with automated contract testing, performance testing, and security validation.",
+      fullDescription: "A comprehensive API testing suite that covers all aspects of API quality assurance. The suite includes automated contract testing to ensure API compliance, performance testing to validate system behavior under load, and security testing to identify vulnerabilities. Built with Postman, Newman, and JMeter, it provides automated test execution and detailed reporting. The solution integrates with FastAPI for rapid test development and uses MongoDB for test data management.",
+      tech: ["Postman", "Newman", "JMeter", "Python", "FastAPI", "MongoDB"],
+      type: "QA & Testing",
+      challenges: [
+        "Implementing comprehensive API contract testing",
+        "Designing realistic performance test scenarios",
+        "Automating security vulnerability detection",
+        "Managing complex test data scenarios"
+      ],
+      features: [
+        "Automated contract testing",
+        "Performance and load testing",
+        "Security vulnerability scanning",
+        "Test data management",
+        "Continuous integration support",
+        "Detailed test reporting"
+      ]
+    },
+    {
       id: 'ueba-system',
       title: "UEBA (User and Entity Behavior Analytics)",
       description: "Advanced behavioral analytics platform for detecting security threats through machine learning and real-time user activity monitoring.",
@@ -35,7 +101,7 @@ const ProjectDetail = () => {
       description: "High-performance correlation engine for processing and analyzing large-scale security events and incident detection.",
       fullDescription: "A powerful Correlation Engine designed to process and correlate security events from multiple sources in real-time. The system uses complex event processing techniques to identify patterns and relationships between seemingly unrelated security incidents. Built with Java and Apache Storm for high-throughput stream processing, it integrates with various security tools and SIEM systems to provide comprehensive threat intelligence and automated incident response capabilities.",
       tech: ["Java", "Apache Storm", "Redis", "PostgreSQL", "RabbitMQ", "Kubernetes"],
-      type: "Backend Development",
+      type: "Event Processing",
       challenges: [
         "Handling high-velocity event streams",
         "Implementing complex correlation rules",
