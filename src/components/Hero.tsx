@@ -17,10 +17,11 @@ const Hero = () => {
             {/* Left side - Text content */}
             <div className="text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                <span className="text-gradient">Backend Developer</span>
-                <br />
-                <span className="text-foreground">& QA Engineer</span>
+                <span className="text-gradient">Usan Sakhakarmi</span>
               </h1>
+              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-muted-foreground">
+                Backend Developer & QA Engineer
+              </h2>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 Crafting robust server-side solutions and ensuring software quality through comprehensive testing strategies
               </p>
