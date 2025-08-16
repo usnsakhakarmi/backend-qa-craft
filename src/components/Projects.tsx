@@ -5,35 +5,35 @@ const Projects = () => {
 
   const projects = [
     {
-      id: "ecommerce-api",
-      title: "E-Commerce API Platform",
-      description: "Scalable REST API supporting 10K+ concurrent users with microservices architecture, Redis caching, and comprehensive test coverage.",
-      tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Jest"],
+      id: "ueba-system",
+      title: "UEBA (User and Entity Behavior Analytics)",
+      description: "Advanced behavioral analytics platform for detecting security threats through machine learning and real-time user activity monitoring.",
+      tech: ["Python", "TensorFlow", "Apache Kafka", "Elasticsearch", "MongoDB", "Docker"],
+      type: "Security Analytics",
+      image: "/api/placeholder/400/250"
+    },
+    {
+      id: "correlation-engine",
+      title: "CE (Correlation Engine)",
+      description: "High-performance correlation engine for processing and analyzing large-scale security events and incident detection.",
+      tech: ["Java", "Apache Storm", "Redis", "PostgreSQL", "RabbitMQ", "Kubernetes"],
       type: "Backend Development",
       image: "/api/placeholder/400/250"
     },
     {
-      id: "testing-framework",
-      title: "Automated Testing Framework",
-      description: "Custom testing framework with parallel execution, cross-browser support, and detailed reporting for web applications.",
-      tech: ["Selenium", "Python", "Pytest", "Docker", "CI/CD", "Allure"],
-      type: "QA Automation",
+      id: "agentless-monitoring",
+      title: "Agentless Monitoring System",
+      description: "Network-based monitoring solution that provides comprehensive visibility without requiring agent installation on endpoints.",
+      tech: ["Go", "Prometheus", "Grafana", "SNMP", "WMI", "Linux"],
+      type: "DevOps & Monitoring",
       image: "/api/placeholder/400/250"
     },
     {
-      id: "ueba-system",
-      title: "UEBA (User and Entity Behavior Analytics)",
-      description: "Real-time behavior analytics system with Correlation Engine (CE), agentless monitoring, and dynamic node configuration for threat detection.",
-      tech: ["Go", "Prometheus", "Grafana", "Kubernetes", "AWS", "Terraform"],
-      type: "DevOps & Backend",
-      image: "/api/placeholder/400/250"
-    },
-    {
-      id: "api-testing-suite",
-      title: "API Testing Suite",
-      description: "Comprehensive API testing solution with automated contract testing, performance testing, and security validation.",
-      tech: ["Postman", "Newman", "JMeter", "Python", "FastAPI", "MongoDB"],
-      type: "QA & Testing",
+      id: "node-configuration",
+      title: "Node Configuration Management",
+      description: "Real-time project setup and configuration management system for dynamic node deployment and orchestration.",
+      tech: ["Ansible", "Terraform", "Kubernetes", "Helm", "GitLab CI", "Bash"],
+      type: "DevOps & Infrastructure",
       image: "/api/placeholder/400/250"
     }
   ];
@@ -58,9 +58,10 @@ const Projects = () => {
               >
                 <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   <div className="text-6xl font-mono text-primary/30">
-                    {project.type === "Backend Development" ? "{}" : 
-                     project.type === "QA Automation" ? "⚡" :
-                     project.type === "DevOps & Backend" ? "☁️" : "🔧"}
+                    {project.type === "Security Analytics" ? "👁️" : 
+                     project.type === "Backend Development" ? "{}" :
+                     project.type === "DevOps & Monitoring" ? "📊" : 
+                     project.type === "DevOps & Infrastructure" ? "⚙️" : "🔧"}
                   </div>
                 </div>
                 <div className="p-6">

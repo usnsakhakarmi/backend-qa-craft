@@ -8,91 +8,91 @@ const ProjectDetail = () => {
 
   const projects = [
     {
-      id: 'ecommerce-api',
-      title: "E-Commerce API Platform",
-      description: "Scalable REST API supporting 10K+ concurrent users with microservices architecture, Redis caching, and comprehensive test coverage.",
-      fullDescription: "A comprehensive e-commerce API platform built with modern microservices architecture. The system handles high-traffic scenarios with over 10,000 concurrent users through efficient load balancing and Redis caching strategies. The platform includes user authentication, product catalog management, order processing, payment integration, and real-time inventory tracking. Built with Node.js and Express, the API follows RESTful principles and includes comprehensive test coverage using Jest. The system is containerized with Docker for easy deployment and scaling.",
-      tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Jest"],
-      type: "Backend Development",
-      challenges: [
-        "Handling high concurrent user loads",
-        "Implementing efficient caching strategies",
-        "Ensuring data consistency across microservices",
-        "Building comprehensive test coverage"
-      ],
-      features: [
-        "User authentication and authorization",
-        "Product catalog management",
-        "Order processing system",
-        "Payment gateway integration",
-        "Real-time inventory tracking",
-        "Analytics and reporting"
-      ]
-    },
-    {
-      id: 'testing-framework',
-      title: "Automated Testing Framework",
-      description: "Custom testing framework with parallel execution, cross-browser support, and detailed reporting for web applications.",
-      fullDescription: "A robust automated testing framework designed for modern web applications. The framework supports parallel test execution across multiple browsers and environments, significantly reducing testing time. Built with Selenium WebDriver and Python, it provides detailed reporting with Allure integration and supports continuous integration workflows. The framework includes page object model implementation, data-driven testing capabilities, and automatic screenshot capture on failures.",
-      tech: ["Selenium", "Python", "Pytest", "Docker", "CI/CD", "Allure"],
-      type: "QA Automation",
-      challenges: [
-        "Implementing stable cross-browser testing",
-        "Managing test data and environments",
-        "Creating maintainable test architecture",
-        "Integrating with CI/CD pipelines"
-      ],
-      features: [
-        "Cross-browser testing support",
-        "Parallel test execution",
-        "Page Object Model architecture",
-        "Data-driven testing",
-        "Detailed reporting with screenshots",
-        "CI/CD integration"
-      ]
-    },
-    {
       id: 'ueba-system',
       title: "UEBA (User and Entity Behavior Analytics)",
-      description: "Real-time behavior analytics system with Correlation Engine (CE), agentless monitoring, and dynamic node configuration for threat detection.",
-      fullDescription: "An advanced User and Entity Behavior Analytics (UEBA) system designed for real-time threat detection and security monitoring. The system features a sophisticated Correlation Engine (CE) that analyzes user and entity behaviors to identify potential security threats and anomalies. Built with agentless architecture, it monitors network activities without requiring software installation on endpoints. The system includes dynamic node configuration capabilities, allowing for flexible deployment and scaling based on organizational needs. Real-time processing ensures immediate threat detection and response.",
-      tech: ["Go", "Prometheus", "Grafana", "Kubernetes", "AWS", "Terraform"],
-      type: "DevOps & Backend",
+      description: "Advanced behavioral analytics platform for detecting security threats through machine learning and real-time user activity monitoring.",
+      fullDescription: "A sophisticated User and Entity Behavior Analytics (UEBA) system that leverages machine learning algorithms to establish baseline behaviors for users and entities within an organization. The system continuously monitors activities and identifies deviations that may indicate security threats, insider attacks, or compromised accounts. Built with Python and TensorFlow, it processes large volumes of log data in real-time using Apache Kafka for data streaming and Elasticsearch for fast search and analytics.",
+      tech: ["Python", "TensorFlow", "Apache Kafka", "Elasticsearch", "MongoDB", "Docker"],
+      type: "Security Analytics",
       challenges: [
-        "Processing large volumes of behavioral data in real-time",
-        "Implementing accurate anomaly detection algorithms",
-        "Designing agentless monitoring architecture",
-        "Creating scalable correlation engine"
+        "Building accurate behavioral baselines for diverse user types",
+        "Processing massive volumes of log data in real-time",
+        "Reducing false positives in anomaly detection",
+        "Implementing scalable machine learning pipelines"
       ],
       features: [
-        "Real-time behavior analytics",
-        "Correlation Engine for threat detection",
-        "Agentless monitoring system",
-        "Dynamic node configuration",
-        "Machine learning-based anomaly detection",
-        "Comprehensive security dashboards"
+        "Machine learning-based behavior modeling",
+        "Real-time anomaly detection",
+        "Risk scoring and prioritization",
+        "Interactive security dashboards",
+        "Automated threat alerting",
+        "Historical behavior analysis"
       ]
     },
     {
-      id: 'api-testing-suite',
-      title: "API Testing Suite",
-      description: "Comprehensive API testing solution with automated contract testing, performance testing, and security validation.",
-      fullDescription: "A comprehensive API testing suite that covers all aspects of API quality assurance. The suite includes automated contract testing to ensure API compliance, performance testing to validate system behavior under load, and security testing to identify vulnerabilities. Built with Postman, Newman, and JMeter, it provides automated test execution and detailed reporting. The solution integrates with FastAPI for rapid test development and uses MongoDB for test data management.",
-      tech: ["Postman", "Newman", "JMeter", "Python", "FastAPI", "MongoDB"],
-      type: "QA & Testing",
+      id: 'correlation-engine',
+      title: "CE (Correlation Engine)",
+      description: "High-performance correlation engine for processing and analyzing large-scale security events and incident detection.",
+      fullDescription: "A powerful Correlation Engine designed to process and correlate security events from multiple sources in real-time. The system uses complex event processing techniques to identify patterns and relationships between seemingly unrelated security incidents. Built with Java and Apache Storm for high-throughput stream processing, it integrates with various security tools and SIEM systems to provide comprehensive threat intelligence and automated incident response capabilities.",
+      tech: ["Java", "Apache Storm", "Redis", "PostgreSQL", "RabbitMQ", "Kubernetes"],
+      type: "Backend Development",
       challenges: [
-        "Implementing comprehensive API contract testing",
-        "Designing realistic performance test scenarios",
-        "Automating security vulnerability detection",
-        "Managing complex test data scenarios"
+        "Handling high-velocity event streams",
+        "Implementing complex correlation rules",
+        "Maintaining low-latency processing",
+        "Scaling across distributed environments"
       ],
       features: [
-        "Automated contract testing",
-        "Performance and load testing",
-        "Security vulnerability scanning",
-        "Test data management",
-        "Continuous integration support",
-        "Detailed test reporting"
+        "Real-time event correlation",
+        "Complex pattern matching",
+        "Multi-source data integration",
+        "Automated incident creation",
+        "Rule-based correlation logic",
+        "Performance monitoring and metrics"
+      ]
+    },
+    {
+      id: 'agentless-monitoring',
+      title: "Agentless Monitoring System",
+      description: "Network-based monitoring solution that provides comprehensive visibility without requiring agent installation on endpoints.",
+      fullDescription: "An innovative agentless monitoring system that provides comprehensive infrastructure monitoring without the overhead of installing agents on target systems. The solution uses network-based discovery, SNMP polling, WMI queries, and API integrations to collect metrics and monitor system health. Built with Go for high performance and low resource consumption, it integrates with Prometheus for metrics collection and Grafana for visualization, providing complete observability across hybrid environments.",
+      tech: ["Go", "Prometheus", "Grafana", "SNMP", "WMI", "Linux"],
+      type: "DevOps & Monitoring",
+      challenges: [
+        "Achieving comprehensive monitoring without agents",
+        "Handling diverse system types and protocols",
+        "Maintaining security without local access",
+        "Scaling monitoring across large networks"
+      ],
+      features: [
+        "Network-based system discovery",
+        "Multi-protocol data collection",
+        "Real-time performance monitoring",
+        "Automated alerting and notifications",
+        "Custom dashboard creation",
+        "Historical data analysis"
+      ]
+    },
+    {
+      id: 'node-configuration',
+      title: "Node Configuration Management",
+      description: "Real-time project setup and configuration management system for dynamic node deployment and orchestration.",
+      fullDescription: "A comprehensive node configuration management system designed for real-time project setup and deployment orchestration. The system automates the entire lifecycle of node provisioning, configuration, and management across multiple environments. Built with Ansible for configuration management and Terraform for infrastructure provisioning, it supports dynamic scaling and self-healing capabilities. The solution integrates with Kubernetes for container orchestration and GitLab CI for continuous deployment workflows.",
+      tech: ["Ansible", "Terraform", "Kubernetes", "Helm", "GitLab CI", "Bash"],
+      type: "DevOps & Infrastructure",
+      challenges: [
+        "Managing configuration drift across environments",
+        "Implementing zero-downtime deployments",
+        "Handling complex dependency management",
+        "Ensuring consistent state across nodes"
+      ],
+      features: [
+        "Automated node provisioning",
+        "Configuration drift detection",
+        "Multi-environment support",
+        "Rolling update capabilities",
+        "Self-healing infrastructure",
+        "Compliance monitoring and reporting"
       ]
     }
   ];
