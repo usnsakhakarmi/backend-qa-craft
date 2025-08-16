@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const navigate = useNavigate();
+
   const projects = [
     {
+      id: "ecommerce-api",
       title: "E-Commerce API Platform",
       description: "Scalable REST API supporting 10K+ concurrent users with microservices architecture, Redis caching, and comprehensive test coverage.",
       tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Jest"],
@@ -11,6 +13,7 @@ const Projects = () => {
       image: "/api/placeholder/400/250"
     },
     {
+      id: "testing-framework",
       title: "Automated Testing Framework",
       description: "Custom testing framework with parallel execution, cross-browser support, and detailed reporting for web applications.",
       tech: ["Selenium", "Python", "Pytest", "Docker", "CI/CD", "Allure"],
@@ -18,13 +21,15 @@ const Projects = () => {
       image: "/api/placeholder/400/250"
     },
     {
-      title: "Cloud Infrastructure Monitoring",
-      description: "Monitoring solution with real-time metrics, alerting, and automated scaling for cloud-native applications.",
+      id: "ueba-system",
+      title: "UEBA (User and Entity Behavior Analytics)",
+      description: "Real-time behavior analytics system with Correlation Engine (CE), agentless monitoring, and dynamic node configuration for threat detection.",
       tech: ["Go", "Prometheus", "Grafana", "Kubernetes", "AWS", "Terraform"],
       type: "DevOps & Backend",
       image: "/api/placeholder/400/250"
     },
     {
+      id: "api-testing-suite",
       title: "API Testing Suite",
       description: "Comprehensive API testing solution with automated contract testing, performance testing, and security validation.",
       tech: ["Postman", "Newman", "JMeter", "Python", "FastAPI", "MongoDB"],
@@ -46,7 +51,11 @@ const Projects = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="card-hover bg-card rounded-lg border overflow-hidden">
+              <div 
+                key={index} 
+                className="card-hover bg-card rounded-lg border overflow-hidden cursor-pointer transition-transform hover:scale-105"
+                onClick={() => navigate(`/project/${project.id}`)}
+              >
                 <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   <div className="text-6xl font-mono text-primary/30">
                     {project.type === "Backend Development" ? "{}" : 
@@ -64,7 +73,7 @@ const Projects = () => {
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
@@ -73,16 +82,6 @@ const Projects = () => {
                         {tech}
                       </span>
                     ))}
-                  </div>
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button size="sm" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </Button>
                   </div>
                 </div>
               </div>
