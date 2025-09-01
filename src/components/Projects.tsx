@@ -73,17 +73,6 @@ const Projects = () => {
                 className="card-hover bg-card rounded-lg border overflow-hidden cursor-pointer transition-transform hover:scale-105"
                 onClick={() => navigate(`/project/${project.id}`)}
               >
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-6xl font-mono text-primary/30">
-                    {project.type === "Backend Development" ? "{}" : 
-                     project.type === "QA Automation" ? "⚡" :
-                     project.type === "QA & Testing" ? "🔧" :
-                     project.type === "Security Analytics" ? "👁️" : 
-                     project.type === "Event Processing" ? "🔄" :
-                     project.type === "DevOps & Monitoring" ? "📊" : 
-                     project.type === "DevOps & Infrastructure" ? "⚙️" : "💻"}
-                  </div>
-                </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
