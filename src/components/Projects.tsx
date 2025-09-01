@@ -9,56 +9,49 @@ const Projects = () => {
       title: "E-Commerce API Platform",
       description: "Scalable REST API supporting 10K+ concurrent users with microservices architecture, Redis caching, and comprehensive test coverage.",
       tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Jest"],
-      type: "Backend Development",
-      image: "/api/placeholder/400/250"
+      type: "Backend Development"
     },
     {
       id: "testing-framework",
       title: "Automated Testing Framework",
       description: "Custom testing framework with parallel execution, cross-browser support, and detailed reporting for web applications.",
       tech: ["Selenium", "Python", "Pytest", "Docker", "CI/CD", "Allure"],
-      type: "QA Automation",
-      image: "/api/placeholder/400/250"
+      type: "QA Automation"
     },
     {
       id: "api-testing-suite",
       title: "API Testing Suite",
       description: "Comprehensive API testing solution with automated contract testing, performance testing, and security validation.",
       tech: ["Postman", "Newman", "JMeter", "Python", "FastAPI", "MongoDB"],
-      type: "QA & Testing",
-      image: "/api/placeholder/400/250"
+      type: "QA & Testing"
     },
     {
       id: "ueba-system",
       title: "UEBA (User and Entity Behavior Analytics)",
       description: "Advanced behavioral analytics platform for detecting security threats through machine learning and real-time user activity monitoring.",
       tech: ["Python", "TensorFlow", "Apache Kafka", "Elasticsearch", "MongoDB", "Docker"],
-      type: "Security Analytics",
-      image: "/api/placeholder/400/250"
+      type: "Security Analytics"
     },
     {
       id: "correlation-engine",
       title: "CE (Correlation Engine)",
       description: "High-performance correlation engine for processing and analyzing large-scale security events and incident detection.",
       tech: ["Java", "Apache Storm", "Redis", "PostgreSQL", "RabbitMQ", "Kubernetes"],
-      type: "Event Processing",
-      image: "/api/placeholder/400/250"
+      type: "Event Processing"
     },
     {
       id: "agentless-monitoring",
       title: "Agentless Monitoring System",
       description: "Network-based monitoring solution that provides comprehensive visibility without requiring agent installation on endpoints.",
       tech: ["Go", "Prometheus", "Grafana", "SNMP", "WMI", "Linux"],
-      type: "DevOps & Monitoring",
-      image: "/api/placeholder/400/250"
+      type: "DevOps & Monitoring"
     },
     {
       id: "node-configuration",
       title: "Node Configuration Management",
       description: "Real-time project setup and configuration management system for dynamic node deployment and orchestration.",
       tech: ["Ansible", "Terraform", "Kubernetes", "Helm", "GitLab CI", "Bash"],
-      type: "DevOps & Infrastructure",
-      image: "/api/placeholder/400/250"
+      type: "DevOps & Infrastructure"
     }
   ];
 
