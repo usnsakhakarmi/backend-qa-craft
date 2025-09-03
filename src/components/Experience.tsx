@@ -15,7 +15,69 @@ const Experience = () => {
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border"></div>
             
-            <div className="relative">
+            
+            <div className="relative space-y-12">
+              {/* Associate Software QA */}
+              <div className="flex items-start space-x-6">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-4 border-background shadow-lg">
+                    <Briefcase className="h-6 w-6 text-primary" />
+                  </div>
+                </div>
+                
+                <div className="card-hover bg-card p-8 rounded-lg border flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <h3 className="text-2xl font-semibold">Associate Software QA</h3>
+                    <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full mt-2 md:mt-0 self-start">
+                      Current
+                    </span>
+                  </div>
+                  
+                  <div className="flex items-center text-muted-foreground mb-4 space-x-4">
+                    <div className="flex items-center">
+                      <MapPin className="h-4 w-4 mr-1" />
+                      <span className="font-medium">Vairav Tech</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Calendar className="h-4 w-4 mr-1" />
+                      <span>23/02/2025 – Present</span>
+                    </div>
+                  </div>
+
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Worked on five major projects: UEBA, Agentless, Correlation Engine, Node Configuration, and Report Engine.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Tested ML-trained models, anomaly detection patterns, and rule-based/Sigma rule detections.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Performed API testing (Postman), database testing (PostgreSQL, MySQL, MSSQL, Oracle, MongoDB), and automation with Cypress.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Conducted performance/load testing using K6 and monitored Kubernetes logs for error detection.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Validated backend-core coordination with Kafka, Centrifugo, and Redis, including resync during container restarts.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Tested privilege roles, node configurations (Docker, Vagrant, kOs, Cilium), and certificate-based authentication.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Verified report generation workflows, ensuring accurate PDF/Excel anomaly reports with visualizations and webhook integrations.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Software QA Intern */}
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-4 border-background shadow-lg">
@@ -38,7 +100,7 @@ const Experience = () => {
                     </div>
                     <div className="flex items-center">
                       <Calendar className="h-4 w-4 mr-1" />
-                      <span>Nov 2024 - Feb 2025</span>
+                      <span>11/11/2024 – 11/02/2025</span>
                     </div>
                   </div>
 
