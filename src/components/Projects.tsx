@@ -48,9 +48,9 @@ const Projects = () => {
     },
     {
       id: "node-configuration",
-      title: "Node Configuration Management",
+      title: "HomeTown",
       description: "Real-time project setup and configuration management system for dynamic node deployment and orchestration.",
-      tech: ["Ansible", "Terraform", "Kubernetes", "Helm", "GitLab CI", "Bash"],
+      tech: ["Vagrant", "Linux VMs", "Kubernetes", "Certificate management (CA bundles, keys)"],
       type: "DevOps & Infrastructure"
     }
   ];

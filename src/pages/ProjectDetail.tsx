@@ -96,66 +96,55 @@ const ProjectDetail = () => {
       id: 'correlation-engine',
       title: "CE (Correlation Engine)",
       description: "High-performance correlation engine for processing and analyzing large-scale security events and incident detection.",
-      fullDescription: "A powerful Correlation Engine designed to process and correlate security events from multiple sources in real-time. The system uses complex event processing techniques to identify patterns and relationships between seemingly unrelated security incidents. Built with Java and Apache Storm for high-throughput stream processing, it integrates with various security tools and SIEM systems to provide comprehensive threat intelligence and automated incident response capabilities.",
-      tech: ["Java", "Apache Storm", "Redis", "PostgreSQL", "RabbitMQ", "Kubernetes"],
+      fullDescription: "Focused on validating rule-based and Sigma rule detections for alerts. Ensured backend–core synchronization with Redis and tested integration with webhook services for alert delivery.",
+      tech: ["Redis", "Kafka", "PostgreSQL", "Cypress", "Postman", "Webhooks"],
       type: "Event Processing",
       challenges: [
-        "Handling high-velocity event streams",
-        "Implementing complex correlation rules",
-        "Maintaining low-latency processing",
-        "Scaling across distributed environments"
+        "Verifying accurate alert matching with imported rules",
+        "Ensuring low-latency alert delivery",
+        "Debugging rule execution pipelines"
       ],
       features: [
-        "Real-time event correlation",
-        "Complex pattern matching",
-        "Multi-source data integration",
-        "Automated incident creation",
-        "Rule-based correlation logic",
-        "Performance monitoring and metrics"
+        "Rule-based detection and alert validation",
+        "Sigma rule detection testing",
+        "Webhook-based notification services",
+        "Backend-core coordination via Redis"
       ]
     },
     {
       id: 'agentless-monitoring',
       title: "Agentless Monitoring System",
       description: "Network-based monitoring solution that provides comprehensive visibility without requiring agent installation on endpoints.",
-      fullDescription: "An innovative agentless monitoring system that provides comprehensive infrastructure monitoring without the overhead of installing agents on target systems. The solution uses network-based discovery, SNMP polling, WMI queries, and API integrations to collect metrics and monitor system health. Built with Go for high performance and low resource consumption, it integrates with Prometheus for metrics collection and Grafana for visualization, providing complete observability across hybrid environments.",
-      tech: ["Go", "Prometheus", "Grafana", "SNMP", "WMI", "Linux"],
+      fullDescription: "Tested multi-database support for banking systems where incoming data was ingested and dumped into containerized services. Validated data synchronization across 5 database engines.",
+      tech: ["PostgreSQL", "MySQL", "MSSQL", "Oracle", "MongoDB", "Kubernetes", "Linux", "Postman", "Cypress"],
       type: "DevOps & Monitoring",
       challenges: [
-        "Achieving comprehensive monitoring without agents",
-        "Handling diverse system types and protocols",
-        "Maintaining security without local access",
-        "Scaling monitoring across large networks"
+        "Ensuring consistent behavior across heterogeneous databases",
+        "Handling schema and query variations among DB engines",
+        "Verifying containerized data dumping reliability"
       ],
       features: [
-        "Network-based system discovery",
-        "Multi-protocol data collection",
-        "Real-time performance monitoring",
-        "Automated alerting and notifications",
-        "Custom dashboard creation",
-        "Historical data analysis"
+        "Multi-database compatibility",
+        "Real-time ingestion into containers",
+        "Data validation and consistency testing"
       ]
     },
     {
       id: 'node-configuration',
-      title: "Node Configuration Management",
+      title: "HomeTown",
       description: "Real-time project setup and configuration management system for dynamic node deployment and orchestration.",
-      fullDescription: "A comprehensive node configuration management system designed for real-time project setup and deployment orchestration. The system automates the entire lifecycle of node provisioning, configuration, and management across multiple environments. Built with Ansible for configuration management and Terraform for infrastructure provisioning, it supports dynamic scaling and self-healing capabilities. The solution integrates with Kubernetes for container orchestration and GitLab CI for continuous deployment workflows.",
-      tech: ["Ansible", "Terraform", "Kubernetes", "Helm", "GitLab CI", "Bash"],
+      fullDescription: "Tested configuration of nodes in distributed environments using Linux VMs provisioned with Vagrant. Validated system behavior with certificate-based authentication using public/private keys and CA bundles.",
+      tech: ["Vagrant", "Linux VMs", "Kubernetes", "Certificate management (CA bundles, keys)"],
       type: "DevOps & Infrastructure",
       challenges: [
-        "Managing configuration drift across environments",
-        "Implementing zero-downtime deployments",
-        "Handling complex dependency management",
-        "Ensuring consistent state across nodes"
+        "Debugging VM-level misconfigurations",
+        "Validating secure system communication using generated certificates",
+        "Ensuring consistent node behavior across environments"
       ],
       features: [
-        "Automated node provisioning",
-        "Configuration drift detection",
-        "Multi-environment support",
-        "Rolling update capabilities",
-        "Self-healing infrastructure",
-        "Compliance monitoring and reporting"
+        "Node configuration across Linux environments",
+        "Certificate-based authentication testing",
+        "Secure communication validation"
       ]
     }
   ];
