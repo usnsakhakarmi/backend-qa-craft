@@ -77,22 +77,19 @@ const ProjectDetail = () => {
       id: 'ueba-system',
       title: "UEBA (User and Entity Behavior Analytics)",
       description: "Advanced behavioral analytics platform for detecting security threats through machine learning and real-time user activity monitoring.",
-      fullDescription: "A sophisticated User and Entity Behavior Analytics (UEBA) system that leverages machine learning algorithms to establish baseline behaviors for users and entities within an organization. The system continuously monitors activities and identifies deviations that may indicate security threats, insider attacks, or compromised accounts. Built with Python and TensorFlow, it processes large volumes of log data in real-time using Apache Kafka for data streaming and Elasticsearch for fast search and analytics.",
-      tech: ["Python", "TensorFlow", "Apache Kafka", "Elasticsearch", "MongoDB", "Docker"],
+      fullDescription: "Tested ML-trained models for anomaly detection based on user activity patterns. Ensured backend–core coordination through Kafka and Centrifugo for real-time notifications. Validated system recovery during Kubernetes restarts and tested zombie processes in core modules.",
+      tech: ["Kafka", "Centrifugo", "PostgreSQL", "Cypress", "Postman", "Kubernetes", "K6"],
       type: "Security Analytics",
       challenges: [
-        "Building accurate behavioral baselines for diverse user types",
-        "Processing massive volumes of log data in real-time",
-        "Reducing false positives in anomaly detection",
-        "Implementing scalable machine learning pipelines"
+        "Ensuring stability during Kubernetes restarts",
+        "Maintaining accuracy of anomaly detection models",
+        "Monitoring and debugging errors in distributed logs"
       ],
       features: [
-        "Machine learning-based behavior modeling",
-        "Real-time anomaly detection",
-        "Risk scoring and prioritization",
-        "Interactive security dashboards",
-        "Automated threat alerting",
-        "Historical behavior analysis"
+        "ML-based anomaly detection",
+        "Real-time notification and alerting",
+        "Backend-core resync validation during container restarts",
+        "Zombie process detection and testing"
       ]
     },
     {
