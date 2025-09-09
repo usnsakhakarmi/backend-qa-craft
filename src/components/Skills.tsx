@@ -1,4 +1,9 @@
+import { Code, Database, Cloud, Wrench, Brain, CheckCircle2 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const Skills = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   const backendSkills = [
     "Node.js", "Python", "Java", "Go", "Express.js", "FastAPI", 
     "Spring Boot", "PostgreSQL", "MongoDB", "Redis", "Docker", "Kubernetes"
@@ -33,7 +38,7 @@ const Skills = () => {
   );
 
   return (
-    <section id="skills" className="py-24">
+    <section ref={ref} id="skills" className={`py-24 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">

@@ -1,6 +1,8 @@
 import { GraduationCap, Calendar, MapPin } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Education = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const education = [
     {
       degree: "Bachelor's of Computer Application",
@@ -23,7 +25,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-24 bg-muted/30">
+    <section ref={ref} id="education" className={`py-24 bg-muted/30 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">

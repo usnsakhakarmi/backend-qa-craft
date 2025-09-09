@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Projects = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const navigate = useNavigate();
 
   const projects = [
@@ -56,7 +58,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-muted/30">
+    <section ref={ref} id="projects" className={`py-24 bg-muted/30 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
