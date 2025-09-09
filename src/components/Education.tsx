@@ -5,14 +5,20 @@ const Education = () => {
     {
       degree: "Bachelor's of Computer Application",
       institution: "Bhaktapur Multiple Campus",
-      duration: "2020 - 2024",
+      duration: "2022 - 2026",
       description: "Comprehensive study of computer applications, programming languages, software development, and database management. Focused on practical applications of technology in solving real-world problems."
     },
     {
       degree: "Science",
       institution: "Khwopa College",
-      duration: "2018 - 2020",
+      duration: "2020 - 2021",
       description: "Foundation in science with emphasis on mathematics, physics, and computer science. Built strong analytical and problem-solving skills essential for technology career."
+    },
+    {
+      degree: "School Level Education",
+      institution: "Bright Star English School",
+      duration: "2019",
+      description: "Completed secondary education with excellence in academics and extracurricular activities. 'Education is the most powerful weapon which you can use to change the world' - this philosophy guided my learning journey, building strong foundations in critical thinking and leadership skills."
     }
   ];
 
