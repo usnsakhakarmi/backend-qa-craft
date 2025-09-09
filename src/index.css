@@ -126,4 +126,19 @@ All colors MUST be HSL.
     box-shadow: var(--glow);
     transform: translateY(-2px);
   }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
 }
